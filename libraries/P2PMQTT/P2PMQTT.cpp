@@ -594,6 +594,7 @@ bool P2PMQTT::cmpStr(byte* str1, char* str2, int length) {
   for(int i = 0; i < length; i++) {
     result |= (str1[i] == str2[i]); 
   }
+  return result;
 }
 
 byte* P2PMQTT::getTopicUSB(int length) {
